@@ -1,0 +1,24 @@
+
+Final Project Concept:
+I am going to create a beautiful and clean single-page website for an actor friend of mine. She currently has no 
+professional web presence and I want to make a central location for casting agents, directors, and other creatives 
+to access images, video clips, CV, and bio. During my first quarter the I came across some websites that whose 
+elements changed with scrolling. They made an impact on me and I’ve been wanting to try something like that so I 
+plan on using ScrollReveal.js to make separation and visual interest between the categories. I’ll have a navigation 
+bar at the top so that a user can jump directly to the content that they are interested in and currently I think that 
+there will be five separate sections: Home, About/CV, Images, Video, and Contact Info. It’s important to me that the 
+site looks clean and classic, but also beautiful, because many of the actor pages I have looked at while researching 
+are pretty underwhelming. I don’t have an exact plan off Animate.css yet, but I think that it may be helpful in this 
+instance and I would like to begin to get familiar with it for future projects. I would also like to use this as an 
+opportunity to build more familiarity with Bootstrap and will be using it to make the site mobile accessible.
+
+Wireframes:
+Web: https://wireframe.cc/uGbxC0
+Mobile: https://wireframe.cc/GnQQU9
+
+
+Libraries/Modules:
+jQuery
+Bootstrap
+ScrollReveal.js
+Animate.css
