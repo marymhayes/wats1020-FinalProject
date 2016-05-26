@@ -1,0 +1,94 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+  /*
+Attempts at centering containers that didn't seem to work.
+  .element {
+     .container-fluid();
+  }
+
+.container {
+    position: relative;
+    width: 100%;
+}*/
+
+/* Began centering elements*/
+body {
+ margin: 0;
+ padding: 0;
+}
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+#aboutimage {    position: relative;
+    width: 100%;
+}
+p {
+    text-align: center;
+}
+iframe {
+    position: relative;
+    width: 100%;
+  }
+nav {
+  background-color: white;
+  color: black;
+}
+
+/* Added boilerplate media query template found at https://stuffandnonsense.co.uk/projects/320andup/.
+Customized to fit bootstrap container widths.*/
+   /* Phones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 992px) {
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1200px) {
+}

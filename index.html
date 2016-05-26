@@ -1,0 +1,235 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mobile Friendly Layout Experiments</title>
+        <meta name="description" content="Mobile friendly layout experiments.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- Created single column, mobile-friendly header with navigation. Waiting for horizontal images, used provided
+image as place holder. Linked navigation tags with corresponding containers. -->
+<!-- Header -->
+    <nav class="navbar navbar-inverse col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav" href="#" id="navigation">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#aboutimage">About</a></li>
+      <li><a href="#imageheader">Image</a></li>
+      <li><a href="#videoheader">Video</a></li>
+    </ul>
+    <img src="img/retina_wood_@2X.png" alt="Placeholder" class="img-responsive">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Alice Johnson</a>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Created container for "About" section. Waiting on landscape images, used existing image as placeholder. Created single
+column for bio information and three columns for resume. Made resume not visible on phones.  -->
+
+<!-- Info -->
+      <div class="container-fluid">
+
+        <div class="row">
+             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-0" href="#" id="aboutimage">
+                     <img class="img-responsive" src="img/skulls.png" alt="Placeholder">
+             </div>
+           </div>
+
+
+          <div class="row" id="bio">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" href="#">
+            <p> Alice is an actress living in New York. </p>
+          </div>
+        </div>
+
+        <div class="row" id="resume">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-0" href="#">
+            <p> Theater. </p>
+            <p> Theater Credits </p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-0" href="#">
+            <p> Film. </p>
+            <p> Film Credits </p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-0" href="#">
+            <p> Voiceover. </p>
+            <p> Voiceover Credits </p>
+          </div>
+        </div>
+
+      </div>
+
+<!-- Created container for image gallery. Made grid 3x3 in large and extra large device and single column in smaller devices.
+Checked if polyfill was needed for img element, but src is supported. -->
+
+<!-- Image Gallery -->
+      <div class="container-fluid">
+
+           <div class="row" id="imageheader">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                   <h1 class="page-header">Image</h1>
+               </div>
+             </div>
+
+          <div class="row" id="galleryimages">
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                   <a class="thumbnail" href="#">
+                       <img class="img-responsive" src="img/Headshot 1.jpg" alt="Alice Johnson Headshot">
+                   </a>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                   <a class="thumbnail" href="#">
+                       <img class="img-responsive" src="img/Headshot 2.jpg" alt="Alice Johnson Headshot">
+                   </a>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                   <a class="thumbnail" href="#">
+                       <img class="img-responsive" src="img/Headshot 3.jpg" alt="Alice Johnson Headshot">
+                   </a>
+               </div>
+          </div>
+
+          <div class="row" id="galleryimages">
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                   <a class="thumbnail" href="#">
+                       <img class="img-responsive" src="img/JH-5F61E2C-HighRez.FLAT.jpg" alt="Alice Johnson Headshot">
+                   </a>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                   <a class="thumbnail" href="#">
+                       <img class="img-responsive" src="img/121020johnson016.jpg" alt="Alice Johnson Headshot">
+                   </a>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                   <a class="thumbnail" href="#">
+                       <img class="img-responsive" src="img/Alice Johnson B3.jpg" alt="Alice Johnson Headshot">
+                   </a>
+               </div>
+          </div>
+
+          <div class="row" id="galleryimages">
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                   <a class="thumbnail" href="#">
+                       <img class="img-responsive" src="img/Alice Johnson B7.jpg" alt="Alice Johnson Headshot">
+                   </a>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                   <a class="thumbnail" href="#">
+                       <img class="img-responsive" src="img/Alice Johnson B9.jpg" alt="Alice Johnson Headshot">
+                   </a>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                   <a class="thumbnail" href="#">
+                       <img class="img-responsive" src="img/Alice Johnson B13.jpg" alt="Alice Johnson Headshot">
+                   </a>
+               </div>
+
+        </div>
+           </div>
+
+<!-- Created container for video gallery. Made grid 2x2 for medium and large devices and single column for all
+smaller devices. Checked if polyfill was needed for iframe element, but using simply src is supported. -->
+<!-- Video Gallery -->
+           <div class="container-fluid">
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="videoheader">
+                        <h1 class="page-header">Video</h1>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <iframe width="420" height="315"
+                            src="http://www.youtube.com/embed/g2k7av95Dfg?autoplay=0"
+                            scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"
+                            alt="How To 'Mary' Your Man created by Bygwoof">
+                            </iframe>
+                      </div>
+
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <iframe width="420" height="315"
+                            src="http://www.youtube.com/embed/ZoDaz8-sbvE?autoplay=0"
+                            scrolling="no" frameborder="0" allowTransparency="true"
+                            allowFullScreen="true" alt="Because Me Promo">
+                           </iframe>
+                      </div>
+                   </div>
+
+                   <div class="row">
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <iframe width="420" height="315"
+                          src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbygwoofc%2Fvideos%2F1566034143614190%2F&show_text=0&width=420"
+                          scrolling="no" frameborder="0" allowTransparency="true"
+                          allowFullScreen="true" alt="Dear XY Chromosome Holders"></iframe>
+                     </div>
+
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                       <iframe width="420" height="315"
+                       src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbygwoofc%2Fvideos%2F1670567153160888%2F&show_text=0&width=420"
+                       scrolling="no" frameborder="0" allowTransparency="true"
+                       allowFullScreen="true" alt="A Dog Toy Story: Episode 1">
+                       </iframe>
+                     </div>
+                  </div>
+
+                </div>
+
+      <!-- Created modified, mobile-friendly three column footer including contact info and credits.-->
+<nav class="navbar navbar-inverse navbar-bottom">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <p>Created by</p>
+                        <p>Mary Hayes 2016</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <p>Contact</p>
+                        <p>alice@email</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <p>New York, New York</p>
+      </div>
+    </div>
+  </div>
+</nav>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+
+      <script src="js/vendor/bootstrap.min.js"></script>
+
+      <script src="js/main.js"></script>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script>
+    </body>
+</html>
