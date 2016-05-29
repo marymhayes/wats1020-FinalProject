@@ -21,7 +21,13 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="css/gallery-css/bootstrap-image-gallery.min.css">
+
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!-- Added Animate.css stylesheet-->
+        <link rel="stylesheet" href="animate.min.css">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -30,32 +36,38 @@
 
 <!-- Created single column, mobile-friendly header with navigation. Waiting for horizontal images, used provided
 image as place holder. Linked navigation tags with corresponding containers. -->
+
+
+<!-- ******* Center Navigation tabs and name ******* -->
 <!-- Header -->
-    <nav class="navbar navbar-inverse col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav" href="#" id="navigation">
+<header>
+    <nav class="navbar col-lg-12 col-md-12 col-sm-12 col-xs-12" id="navigation">
+  <div class="container-fluid" style="background-color:white;">
+    <ul class="nav navbar-nav" href="#">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#aboutimage">About</a></li>
-      <li><a href="#imageheader">Image</a></li>
-      <li><a href="#videoheader">Video</a></li>
+      <li><a href="#aboutimage">Read</a></li>
+      <li><a href="#imageheader">Look</a></li>
+      <li><a href="#videoheader">Watch</a></li>
     </ul>
-    <img src="img/retina_wood_@2X.png" alt="Placeholder" class="img-responsive">
+    <img src="img/AJohnson-header.jpg" alt="Actor Alice Johnson modeling for Grain Audio." class="img-responsive">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Alice Johnson</a>
     </div>
 
   </div>
 </nav>
+</header>
 
 <!-- Created container for "About" section. Waiting on landscape images, used existing image as placeholder. Created single
 column for bio information and three columns for resume. Made resume not visible on phones.  -->
 
+<!-- ******* Add Text ******* -->
 <!-- Info -->
       <div class="container-fluid">
 
         <div class="row">
              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-0" href="#" id="aboutimage">
-                     <img class="img-responsive" src="img/skulls.png" alt="Placeholder">
+                     <img class="img-responsive" src="img/AJohnson-about.jpg" alt="Actor Alice Johnson modeling for Grain Audio.">
              </div>
            </div>
 
@@ -86,7 +98,7 @@ column for bio information and three columns for resume. Made resume not visible
 <!-- Created container for image gallery. Made grid 3x3 in large and extra large device and single column in smaller devices.
 Checked if polyfill was needed for img element, but src is supported. -->
 
-<!-- Image Gallery -->
+<!-- Image Gallery
       <div class="container-fluid">
 
            <div class="row" id="imageheader">
@@ -149,7 +161,92 @@ Checked if polyfill was needed for img element, but src is supported. -->
                </div>
 
         </div>
+           </div> -->
+
+    <!-- Added blu img gallery -->
+    <div class="container-fluid">
+
+         <div class="row" id="imageheader">
+             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <h1 class="page-header">Look</h1>
+             </div>
            </div>
+
+    <div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ******* Add padding to left side ******* -->
+<div <div class="row" id="links">
+
+  <div class="row" id="galleryimages">
+    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"
+      href="img/AliceJohnson001.jpg" title="Alice Johnson" data-gallery>
+        <img src="img/thumbnail/AliceJohnson001thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
+    </a>
+    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson002.jpg" title="Alice Johnson" data-gallery>
+        <img src="img/thumbnail/AliceJohnson002thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
+    </a>
+    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson003.jpg" title="Alice Johnson" data-gallery>
+        <img src="img/thumbnail/AliceJohnson003thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
+    </a>
+  </div>
+
+  <div class="row" id="galleryimages">
+    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson004.jpg" title="Alice Johnson" data-gallery>
+        <img src="img/thumbnail/AliceJohnson004thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
+    </a>
+    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson005.jpg" title="Alice Johnson" data-gallery>
+        <img src="img/thumbnail/AliceJohnson005thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
+    </a>
+    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson006.jpg" title="Alice Johnson" data-gallery>
+        <img src="img/thumbnail/AliceJohnson006thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
+    </a>
+  </div>
+
+  <div class="row" id="galleryimages">
+    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson007.jpg" title="Alice Johnson" data-gallery>
+        <img src="img/thumbnail/AliceJohnson007thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
+    </a>
+    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson008.jpg" title="Alice Johnson" data-gallery>
+        <img src="img/thumbnail/AliceJohnson008thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
+    </a>
+    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson009.jpg" title="Alice Johnson" data-gallery>
+        <img src="img/thumbnail/AliceJohnson009thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
+    </a>
+  </div>
+</div>
 
 <!-- Created container for video gallery. Made grid 2x2 for medium and large devices and single column for all
 smaller devices. Checked if polyfill was needed for iframe element, but using simply src is supported. -->
@@ -157,7 +254,7 @@ smaller devices. Checked if polyfill was needed for iframe element, but using si
            <div class="container-fluid">
 
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="videoheader">
-                        <h1 class="page-header">Video</h1>
+                        <h1 class="page-header">Watch</h1>
                     </div>
                     <div class="row">
                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -197,23 +294,22 @@ smaller devices. Checked if polyfill was needed for iframe element, but using si
                 </div>
 
       <!-- Created modified, mobile-friendly three column footer including contact info and credits.-->
-<nav class="navbar navbar-inverse navbar-bottom">
-  <div class="container-fluid">
+<footer>
+<nav class="navbar navbar-bottom">
+  <div class="container-fluid" style="background-color:white;">
     <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                         <p>Created by</p>
                         <p>Mary Hayes 2016</p>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                         <p>Contact</p>
                         <p>alice@email</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                        <p>New York, New York</p>
       </div>
     </div>
   </div>
 </nav>
+</footer>
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
@@ -231,5 +327,11 @@ smaller devices. Checked if polyfill was needed for iframe element, but using si
           r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
           ga('create','UA-XXXXX-X','auto');ga('send','pageview');
       </script>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+      <script src="js/gallery-js/bootstrap-image-gallery.min.js"></script>
+<!--Added link to ScrollReveal.js-->
+      <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     </body>
 </html>

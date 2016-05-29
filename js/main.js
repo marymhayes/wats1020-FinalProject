@@ -29,3 +29,13 @@ $(document).on('ready', function(){
   }
 
 });
+
+// added Scroll reveal
+
+/* ******* Need to work through *******
+window.sr = ScrollReveal();
+sr.reveal('#navigation');
+sr.reveal('#aboutimage');
+sr.reveal('#imageheader');
+sr.reveal('#videoheader');
+*/

@@ -18,32 +18,38 @@ Attempts at centering containers that didn't seem to work.
 body {
  margin: 0;
  padding: 0;
+ font-family: "Times New Roman", Times, serif;
+}
+header {
+  background-color: none
+  font-family: "Times New Roman", Times, serif;
 }
 h1 {
     text-align: center;
+    font-family: "Times New Roman", Times, serif;
 }
 
 h2 {
     text-align: center;
+    font-family: "Times New Roman", Times, serif;
 }
 
 h3 {
     text-align: center;
+    font-family: "Times New Roman", Times, serif;
 }
-#aboutimage {    position: relative;
-    width: 100%;
+#aboutimage {
+  position: relative;
+  width: 100%;
 }
 p {
     text-align: center;
+    font-family: "Times New Roman", Times, serif;
 }
 iframe {
     position: relative;
     width: 100%;
   }
-nav {
-  background-color: white;
-  color: black;
-}
 
 /* Added boilerplate media query template found at https://stuffandnonsense.co.uk/projects/320andup/.
 Customized to fit bootstrap container widths.*/
@@ -92,3 +98,4 @@ and (min-width : 992px) {
 @media only screen
 and (min-width : 1200px) {
 }
+
