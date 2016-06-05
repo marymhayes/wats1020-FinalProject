@@ -3,176 +3,115 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Mobile Friendly Layout Experiments</title>
-        <meta name="description" content="Mobile friendly layout experiments.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Alice Johnson</title>
+  <meta name="description" content="Alice Johnson Actor Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    body {
+      padding-top: 50px;
+      padding-bottom: 20px;
+          }
+  </style>
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-        <link rel="stylesheet" href="css/gallery-css/bootstrap-image-gallery.min.css">
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <!-- Added Animate.css stylesheet-->
-        <link rel="stylesheet" href="animate.min.css">
-    </head>
-    <body>
+</head>
+    
+<body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-<!-- Created single column, mobile-friendly header with navigation. Waiting for horizontal images, used provided
-image as place holder. Linked navigation tags with corresponding containers. -->
-
-
-<!-- ******* Center Navigation tabs and name ******* -->
 <!-- Header -->
+  <!-- Completely reworked Navbar header to make collapsable. Started with example from
+        http://getbootstrap.com/components/#navbar -->
 <header>
-    <nav class="navbar col-lg-12 col-md-12 col-sm-12 col-xs-12" id="navigation">
-  <div class="container-fluid" style="background-color:white;">
-    <ul class="nav navbar-nav" href="#">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#aboutimage">Read</a></li>
-      <li><a href="#imageheader">Look</a></li>
-      <li><a href="#videoheader">Watch</a></li>
-    </ul>
-    <img src="img/AJohnson-header.jpg" alt="Actor Alice Johnson modeling for Grain Audio." class="img-responsive">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Alice Johnson</a>
-    </div>
+  <nav class="navbar navbar-default navbar-left navbar-fixed-top" id="navigation">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-  </div>
-</nav>
-</header>
-
-<!-- Created container for "About" section. Waiting on landscape images, used existing image as placeholder. Created single
-column for bio information and three columns for resume. Made resume not visible on phones.  -->
-
-<!-- ******* Add Text ******* -->
-<!-- Info -->
-      <div class="container-fluid">
-
-        <div class="row">
-             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-0" href="#" id="aboutimage">
-                     <img class="img-responsive" src="img/AJohnson-about.jpg" alt="Actor Alice Johnson modeling for Grain Audio.">
-             </div>
-           </div>
-
-
-          <div class="row" id="bio">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" href="#">
-            <p> Alice is an actress living in New York. </p>
-          </div>
-        </div>
-
-        <div class="row" id="resume">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-0" href="#">
-            <p> Theater. </p>
-            <p> Theater Credits </p>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-0" href="#">
-            <p> Film. </p>
-            <p> Film Credits </p>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-0" href="#">
-            <p> Voiceover. </p>
-            <p> Voiceover Credits </p>
-          </div>
-        </div>
-
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
 
-<!-- Created container for image gallery. Made grid 3x3 in large and extra large device and single column in smaller devices.
-Checked if polyfill was needed for img element, but src is supported. -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav"> 
+          <li><a href="#">Home</a></li>
+          <li><a href="#bioheader">About</a></li>
+          <li><a href="#imageheader">Stills</a></li>
+          <li><a href="#videoheader">Footage</a></li>
+          <li><a href="#thatthingheader">That Thing</a></li>
+          <li><a href="#twitterFeed">Follow</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      
+      </div><!-- /.navbar-collapse -->           
+    </div><!-- /.col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 -->
+    </div><!-- /.row -->           
+    </div><!-- /.container-fluid --> 
+  </nav>
+  
+  <div> 
+    <img src="img/AJohnson-header-sm.jpg" alt="Actor Alice Johnson modeling for Grain Audio." class="img-responsive" id="introimage">
+  </div>  
+  <div>
+     <h2 class="page-header" id="introheader">Alice Johnson</h2>
+  </div>
+</header>
 
-<!-- Image Gallery
-      <div class="container-fluid">
+<!-- About Info -->
+<div class="container-fluid">
+  <div class="row" id="bio">
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h1 class="page-header" id="bioheader"></h1>
+      
+    <div id="biotext"> 
+        <p> Alice Johnson is originally from Seattle and came to New York to get her degree in English from Fordham University.  
+            She also studied Acting at The London Dramatic Academy, and has been living and acting in NYC for the past decade(ish). 
+            Alice works with many emerging companies, such as Stable Cable Lab Co., Blowout Theater Co., ESPA Primary Stages, and 
+            Boomerang, to name a few.  You may have seen her at IRT, 59E59 Theaters, The Wild Project, Dixon Place, and many other 
+            theaters in the NYC area. She's also a member of BYG Woof Comedy Collective, and a creator of the tri-annual new short 
+            play reading series ThatThing.  Alice lives in Brooklyn with her wonderful boyfriend and is an avid Theater Maker and 
+            Eater of Bagels.<br>
+            Contact Alice at alice@emailaddress.com</p>
+          
+        <form method="get" action="AliceJohnsonResume.pdf">
+          <button type="submit" id="resume">Alice's Resume</button>
+        </form> 
+      </div> <!-- /.page-header -->
+    
+  </div> <!-- /.col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 -->
+  </div> <!-- /.row -->
+</div> <!-- /.container-fluid for About Info-->
 
-           <div class="row" id="imageheader">
-               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                   <h1 class="page-header">Image</h1>
-               </div>
-             </div>
 
-          <div class="row" id="galleryimages">
-               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                   <a class="thumbnail" href="#">
-                       <img class="img-responsive" src="img/Headshot 1.jpg" alt="Alice Johnson Headshot">
-                   </a>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                   <a class="thumbnail" href="#">
-                       <img class="img-responsive" src="img/Headshot 2.jpg" alt="Alice Johnson Headshot">
-                   </a>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                   <a class="thumbnail" href="#">
-                       <img class="img-responsive" src="img/Headshot 3.jpg" alt="Alice Johnson Headshot">
-                   </a>
-               </div>
-          </div>
+<!-- Image Gallery -->
+  <!-- Deleted initial Bootstrap Image Gallery in favor of combined Bootstrap and bluimp Gallery. -->      
+<div class="container-fluid">
+  <div class="row" id="imageheader">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h1 class="page-header"></h1>
+    </div>
+  </div>
 
-          <div class="row" id="galleryimages">
-               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                   <a class="thumbnail" href="#">
-                       <img class="img-responsive" src="img/JH-5F61E2C-HighRez.FLAT.jpg" alt="Alice Johnson Headshot">
-                   </a>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                   <a class="thumbnail" href="#">
-                       <img class="img-responsive" src="img/121020johnson016.jpg" alt="Alice Johnson Headshot">
-                   </a>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                   <a class="thumbnail" href="#">
-                       <img class="img-responsive" src="img/Alice Johnson B3.jpg" alt="Alice Johnson Headshot">
-                   </a>
-               </div>
-          </div>
-
-          <div class="row" id="galleryimages">
-               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                   <a class="thumbnail" href="#">
-                       <img class="img-responsive" src="img/Alice Johnson B7.jpg" alt="Alice Johnson Headshot">
-                   </a>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                   <a class="thumbnail" href="#">
-                       <img class="img-responsive" src="img/Alice Johnson B9.jpg" alt="Alice Johnson Headshot">
-                   </a>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                   <a class="thumbnail" href="#">
-                       <img class="img-responsive" src="img/Alice Johnson B13.jpg" alt="Alice Johnson Headshot">
-                   </a>
-               </div>
-
-        </div>
-           </div> -->
-
-    <!-- Added blu img gallery -->
-    <div class="container-fluid">
-
-         <div class="row" id="imageheader">
-             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                 <h1 class="page-header">Look</h1>
-             </div>
-           </div>
-
-    <div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- Slide, lightbox, and modal code from bluimp https://github.com/blueimp/Bootstrap-Image-Gallery -->
+  <div id="blueimp-gallery" class="blueimp-gallery">
     <!-- The container for the modal slides -->
     <div class="slides"></div>
     <!-- Controls for the borderless lightbox -->
@@ -184,131 +123,210 @@ Checked if polyfill was needed for img element, but src is supported. -->
     <ol class="indicator"></ol>
     <!-- The modal dialog, which will be used to wrap the lightbox content -->
     <div class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body next"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-left prev">
-                        <i class="glyphicon glyphicon-chevron-left"></i>
-                        Previous
-                    </button>
-                    <button type="button" class="btn btn-primary next">
-                        Next
-                        <i class="glyphicon glyphicon-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" aria-hidden="true">&times;</button>
+        <h4 class="modal-title"></h4>
+      </div> <!-- /.modal-header -->
+      <div class="modal-body next"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left prev">
+          <i class="glyphicon glyphicon-chevron-left"></i>
+            Previous
+        </button>
+        <button type="button" class="btn btn-primary next">
+          Next
+          <i class="glyphicon glyphicon-chevron-right"></i>
+        </button>
+      </div> <!-- /.modal-footer -->
+    </div> <!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+    </div> <!-- /. modal fade -->
+  </div> <!-- /.bluimp-gallery -->
 
 
-<!-- ******* Add padding to left side ******* -->
-<div <div class="row" id="links">
-
+  <!-- Changed container class from "row" to "container-fluid", which fixed the padding problem 
+  and ScrollReveal problem.
+  Fixed combined div and a tags and moved Bootstrap column classes to wrapper divs.
+  Fixed column attributes. -->
+  <div id="links">
+    <div class="row" id="galleryimages">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <a href="img/AliceJohnson001.jpg" title="Alice Johnson" data-gallery>
+          <img src="img/thumbnail/AliceJohnson001thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
+        </a>
+      </div>
+    
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <a href="img/AliceJohnson002.jpg" title="Alice Johnson" data-gallery> 
+          <img src="img/thumbnail/AliceJohnson002thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
+        </a>
+      </div>
+    
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <a href="img/AliceJohnson003.jpg" title="Alice Johnson" data-gallery>
+          <img src="img/thumbnail/AliceJohnson003thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
+        </a>
+      </div>
+  </div> <!-- /.row #galleryimages -->
+  
   <div class="row" id="galleryimages">
-    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"
-      href="img/AliceJohnson001.jpg" title="Alice Johnson" data-gallery>
-        <img src="img/thumbnail/AliceJohnson001thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
-    </a>
-    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson002.jpg" title="Alice Johnson" data-gallery>
-        <img src="img/thumbnail/AliceJohnson002thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
-    </a>
-    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson003.jpg" title="Alice Johnson" data-gallery>
-        <img src="img/thumbnail/AliceJohnson003thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
-    </a>
-  </div>
-
-  <div class="row" id="galleryimages">
-    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson004.jpg" title="Alice Johnson" data-gallery>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <a href="img/AliceJohnson004.jpg" title="Alice Johnson" data-gallery>    
         <img src="img/thumbnail/AliceJohnson004thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
-    </a>
-    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson005.jpg" title="Alice Johnson" data-gallery>
+      </a>
+    </div>
+    
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <a href="img/AliceJohnson005.jpg" title="Alice Johnson" data-gallery>  
         <img src="img/thumbnail/AliceJohnson005thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
-    </a>
-    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson006.jpg" title="Alice Johnson" data-gallery>
+      </a>
+    </div>  
+      
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <a href="img/AliceJohnson006.jpg" title="Alice Johnson" data-gallery>
         <img src="img/thumbnail/AliceJohnson006thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
-    </a>
-  </div>
+      </a>
+    </div>  
+  </div> <!-- /.container-fluid #gallery images-->
 
-  <div class="row" id="galleryimages">
-    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson007.jpg" title="Alice Johnson" data-gallery>
+  <div class="row" id="galleryimages"> 
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <a href="img/AliceJohnson007.jpg" title="Alice Johnson" data-gallery>
         <img src="img/thumbnail/AliceJohnson007thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
-    </a>
-    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson008.jpg" title="Alice Johnson" data-gallery>
+      </a>
+    </div>
+    
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <a href="img/AliceJohnson008.jpg" title="Alice Johnson" data-gallery>  
         <img src="img/thumbnail/AliceJohnson008thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
-    </a>
-    <a div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="img/AliceJohnson009.jpg" title="Alice Johnson" data-gallery>
+      </a>
+    </div>
+    
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <a href="img/AliceJohnson009.jpg" title="Alice Johnson" data-gallery> 
         <img src="img/thumbnail/AliceJohnson009thumb.jpg" img class="img-responsive" alt="New York based actor Alice Johnson.">
-    </a>
-  </div>
-</div>
+      </a>
+    </div>    
+  </div> <!-- /.container-fluid #galleryimages-->
+  </div> <!-- /.links -->
+</div> <!-- /.container-fluid for Image Gallery-->
 
-<!-- Created container for video gallery. Made grid 2x2 for medium and large devices and single column for all
-smaller devices. Checked if polyfill was needed for iframe element, but using simply src is supported. -->
+  
 <!-- Video Gallery -->
-           <div class="container-fluid">
+<div class="container-fluid" id="videoheader">
 
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="videoheader">
-                        <h1 class="page-header">Watch</h1>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <iframe width="420" height="315"
-                            src="http://www.youtube.com/embed/g2k7av95Dfg?autoplay=0"
-                            scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"
-                            alt="How To 'Mary' Your Man created by Bygwoof">
-                            </iframe>
-                      </div>
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h1 class="page-header"></h1>
+  </div>
+                    
+  <div class="row">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <iframe width="420" height="315"
+              src="http://www.youtube.com/embed/g2k7av95Dfg?autoplay=0"
+              scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"
+              alt="How To 'Mary' Your Man created by Bygwoof">
+      </iframe>
+    </div>
 
-                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <iframe width="420" height="315"
-                            src="http://www.youtube.com/embed/ZoDaz8-sbvE?autoplay=0"
-                            scrolling="no" frameborder="0" allowTransparency="true"
-                            allowFullScreen="true" alt="Because Me Promo">
-                           </iframe>
-                      </div>
-                   </div>
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <iframe width="420" height="315"
+              src="http://www.youtube.com/embed/ZoDaz8-sbvE?autoplay=0"
+              scrolling="no" frameborder="0" allowTransparency="true"
+              allowFullScreen="true" alt="Because Me Promo">
+      </iframe>
+    </div>
+  </div> <!-- /.row -->
 
-                   <div class="row">
-                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                          <iframe width="420" height="315"
-                          src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbygwoofc%2Fvideos%2F1566034143614190%2F&show_text=0&width=420"
-                          scrolling="no" frameborder="0" allowTransparency="true"
-                          allowFullScreen="true" alt="Dear XY Chromosome Holders"></iframe>
-                     </div>
-
-                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                       <iframe width="420" height="315"
-                       src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbygwoofc%2Fvideos%2F1670567153160888%2F&show_text=0&width=420"
-                       scrolling="no" frameborder="0" allowTransparency="true"
-                       allowFullScreen="true" alt="A Dog Toy Story: Episode 1">
-                       </iframe>
-                     </div>
-                  </div>
-
-                </div>
-
-      <!-- Created modified, mobile-friendly three column footer including contact info and credits.-->
-<footer>
-<nav class="navbar navbar-bottom">
-  <div class="container-fluid" style="background-color:white;">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <p>Created by</p>
-                        <p>Mary Hayes 2016</p>
+  <div class="row">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <iframe width="420" height="315"
+              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbygwoofc%2Fvideos%2F1566034143614190%2F&show_text=0&width=420"
+              scrolling="no" frameborder="0" allowTransparency="true"
+              allowFullScreen="true" alt="Dear XY Chromosome Holders">
+      </iframe>
+    </div>
+    
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <iframe width="420" height="315"
+              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbygwoofc%2Fvideos%2F1670567153160888%2F&show_text=0&width=420"
+              scrolling="no" frameborder="0" allowTransparency="true"
+              allowFullScreen="true" alt="A Dog Toy Story: Episode 1">
+      </iframe>
+    </div>
+  </div> <!-- /.row --> 
+</div> <!-- /.container-fluid for Video Gallery -->
+     
+<!-- That Thing -->
+  <!-- Added That Thing container, including info about the project and an email submit form with 
+       on click event listener-->
+<div class="container-fluid">
+  <div class="row" id="thatthing">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+      
+      <h1 class="page-header" id="thatthingheader">That Thing</h1>
+      <div id="thatthingtext">
+        <p> 
+          That Thing! is a reading series created and produced by Ashley Grombol, Alice Johnson, and Molly Garber.  
+          It was the result of a friendship that formed in an acting class in the spring of 2013. The trio wanted 
+          to create a forum for new short plays that wasn't necessarily tied to a theatre company. It allowed budding 
+          and established playwrights to hear new work aloud with professional actors in a casual setting.  This was 
+          made possible by the generosity and support of Linda and her staff at Characters Bar and Grill.<br>
+        </p>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <p>Contact</p>
-                        <p>alice@email</p>
+      
+      <div class="row" id=thatthingform>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+          <p id=formtext> Be the first to know when you can next see That Thing.<br>Join our email list.</p>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+          <form class="form-inline" role="form">
+            <div class="form-group required">
+              <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" placeholder="Email Address">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
       </div>
+                
+      <div>
+        <p id=thanks style="display: none">Thank you for your interest and support of That Thing!</p>
+      </div>
+      
+     
+    </div> <!-- /.col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 -->
+  </div> <!-- /.row #thatthing -->
+</div> <!-- /.container-fluid for That Thing -->
+
+  <!-- Follow -->
+    <!-- Added Twitter feed from Alice's Theater group Stable Cable using Twitter Post Fetcher JS library
+         created by Jason Mayes https://github.com/jasonmayes/Twitter-Post-Fetcher -->
+<div class="container-fluid" id="twitter">
+  <div class="row">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <p id="twittertext">For latest news and upcoming performances follow Alice on Twitter.<br>@StableCable</p>
+    </div>
+    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8">
+      <div id="twitterFeed"></div>
     </div>
   </div>
-</nav>
+</div>  <!-- /.container-fluid for twitterFeed -->
+  
+<!-- Twitter Feed -->  
+    <!-- Created modified, mobile-friendly three column footer including contact info and credits.
+           Changed to two column footer, didn't need third column -->
+<footer>
+  <nav class="navbar navbar-bottom">
+    <div class="container-fluid" id="footer">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <p>Films, plays, and modeling projects, contact Alice at alice@emailaddress.com</p>
+        </div>
+      </div>
+    </div>
+  </nav>
 </footer>
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
@@ -318,7 +336,7 @@ smaller devices. Checked if polyfill was needed for iframe element, but using si
 
       <script src="js/main.js"></script>
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. *** Waiting until site is hosted at it's intended domain. *** -->
       <script>
           (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
           function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -330,8 +348,13 @@ smaller devices. Checked if polyfill was needed for iframe element, but using si
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-      <script src="js/gallery-js/bootstrap-image-gallery.min.js"></script>
-<!--Added link to ScrollReveal.js-->
+      
+      
+      <!-- Added link to Twitter Post Fetcher libraries -->
+      <script src="js/vendor/twitterFetcher.js"></script>
+      <script src="js/vendor/twitterFetcher_min.js"></script>
+      
+      <!--Added link to ScrollReveal.js-->
       <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     </body>
 </html>

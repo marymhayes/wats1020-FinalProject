@@ -1,55 +1,153 @@
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-  /*
-Attempts at centering containers that didn't seem to work.
-  .element {
-     .container-fluid();
-  }
-
-.container {
-    position: relative;
-    width: 100%;
-}*/
-
-/* Began centering elements*/
+/* Global Styling */
 body {
  margin: 0;
  padding: 0;
- font-family: "Times New Roman", Times, serif;
-}
-header {
-  background-color: none
-  font-family: "Times New Roman", Times, serif;
+ font-family: "Trebuchet MS", Helvetica, sans-serif;
+ font-size: 100%;
+ color: #5a5a5a;
 }
 h1 {
     text-align: center;
-    font-family: "Times New Roman", Times, serif;
 }
 
 h2 {
     text-align: center;
-    font-family: "Times New Roman", Times, serif;
 }
 
 h3 {
     text-align: center;
-    font-family: "Times New Roman", Times, serif;
 }
+
+  /* I decided that I prefer the look of the site without the header titles,
+so I removed them. I kept the h1 tags and styling in case they are necessary
+down the road.*/
+.page-header {
+  border-bottom: none;
+  margin: 20px 0;
+  padding-bottom: 0;
+}
+a {
+  color: #005C5C;
+}
+p {
+    text-align: center;
+    color: #5a5a5a;
+}
+
+/* Navbar and Intro Image */
+    /* Changed font color and hover color to match site styling.*/
+.nav {
+font-size: 2.5em;
+background-color: rgba(255,255,255,0.5);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #005C5C;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: black;
+}
+
 #aboutimage {
   position: relative;
   width: 100%;
 }
-p {
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
+#introheader {
+  font-size: 7em;
+  color: #005C5C;
 }
+
+
+
+/* Bio and Resume */
+#bio {
+  height: 100%;
+  }
+#biotext {
+    font-size: 2em;
+    color: #3a3a3a;
+    background: rgba(255,255,255,0.5);
+    padding-right: 2%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+}
+
+    /* Created and styled button to downloadable resume*/
+#resume {
+    background-color: #005C5C;
+    border: none;
+    color: white;
+    margin:0 auto;
+    display:block;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 50%;
+}
+#resume:hover {
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 9px 25px 0 rgba(0,0,0,0.19);
+}
+
+/* Stills and Video */
 iframe {
     position: relative;
     width: 100%;
   }
+
+/* That Thing */
+  /* Styled That Thing and Twitter containers */
+#thatthingheader {
+  font-size: 5em;
+  color: #005C5C;
+}
+#thatthingtext {
+    font-size: 2em;
+    color: #3a3a3a;
+    background: rgba(255,255,255,0.5);
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+#formtext {
+  font-size: 1.5em;
+  color: #005C5C;
+}
+#thanks {
+  font-size: 1.5em;
+  color: #005C5C;
+}
+
+/*Twitter Feed*/
+#twitter {
+  margin-top: 5%;
+}
+#twitterFeed {
+  font-size: 1em;
+  padding-right: 4%;
+  background-color: rgba(210,212,212,0.5);
+}
+#twittertext {
+  font-size: 2em;
+  color: black;
+  margin-bottom: 0;
+  padding-left: 5%;
+}
+
+/* Footer */
+footer {
+  background-color: #005C5C;
+  margin: 10px 0 0 10px;
+}
+
+footer p {
+  font-size: 2em;
+  color: white;
+  margin: 10px 0
+}
+
+
 
 /* Added boilerplate media query template found at https://stuffandnonsense.co.uk/projects/320andup/.
 Customized to fit bootstrap container widths.*/
